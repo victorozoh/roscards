@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>ROS</title>
+    <!-- Compiled and minified CSS -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/typed.js"></script>
+
+  </head>
+  <body>
+
+    <div class="container">
+
+      <img src="img/drone.png" id="drone-pic" alt="">
+
+      <div class="ros-header">
+        <h1>Learn ROS</h1>
+        <h5>Your guide to mastering the robot operating system</h5>
+      </div>
+      <div class="terminal-title">
+        ~ - bash
+      </div>
+      <div class="ros-terminal">
+        <span id="prompt">user@local :~$</span>
+        <span id="command"></span>
+      </div>
+      <div class="buttons">
+        <a class="waves-effect waves-light btn-large" id="get-started" href="intro.html">Get started</a>
+      </div>
+
+    </div>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <script type="text/javascript">
+      $(function(){
+        var typed = new Typed('#command', {
+          strings: ["roscore", "mkdir -p ~/catkin_ws/src", "cd ~/catkin_ws/src","catkin_init_workspace", "cd ~/catkin_ws", "catkin_make"],
+          typeSpeed: 70,
+          backSpeed:30,
+          loop: true
+        })
+      });
+    </script>
+  </body>
+</html>

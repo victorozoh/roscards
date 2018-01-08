@@ -1,0 +1,31 @@
+header, main, footer {
+   padding-left: 300px;
+ }
+
+ @media only screen and (max-width : 992px) {
+   header, main, footer {
+     padding-left: 0;
+   }
+ }
+
+#page-logo {
+  height: 100%;
+  padding: 0;
+}
+
+#card-info {
+  color: #3f4c6b;
+}
+
+nav {
+  background-color: #3f4c6b;
+}
+
+nav.top-nav {
+  height: 110px;
+}
+
+a.page-title {
+  line-height: 110px;
+  font-size: 48px;
+}

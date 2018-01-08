@@ -1,0 +1,73 @@
+body {
+  /* background-image:   linear-gradient(to top right,transparent,lightyellow),url("../img/robot-intro.jpg"); */
+  background: linear-gradient(90deg, #3f4c6b, #90A6F4);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background-image: linear-gradient(to bottom right,#283c86,#45a247)!important; */
+}
+
+#drone-pic {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  z-index: 11;
+  transform: translateX(-50%);
+  animation-name: dance;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-delay: initial;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-play-state: initial;
+}
+
+@keyframes dance {
+  0%, 100% {transform: translate(0px, 15px);}
+  25% {transform: translate(-250px, -15px);}
+  50% {transform: translate(-500px, 15px);}
+  75% {transform: translate(150px, -30px);}
+}
+
+.ros-header {
+  margin-top: 300px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.terminal-title {
+  height: 20px;
+  width: 1000px;
+  font-size: 0.75em;
+  text-align: center;
+  background-color: #f8f8f8;
+  background-image: -webkit-linear-gradient(top,#e8e8e8,#bcbbbc);
+}
+
+.ros-terminal {
+  padding: 5px 10px;
+  height: 200px;
+  width: 1000px;
+  overflow-y: auto;
+  word-break: normal;
+  background-color: #000;
+  color: #fff;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+#get-started {
+  background-color: #151E3F;
+}
+
+#prompt {
+  color:#ff00df;
+}
+
+#command {
+  text-align: left;
+}

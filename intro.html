@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Introduction</title>
+    <!-- Compiled and minified CSS -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/intro.css">
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="page-title">Introduction</a>
+          </div>
+        </div>
+      </nav>
+      <!-- the div below handles side nav slide out on mobile devices -->
+      <div class="container">
+        <a href="#" data-activates="slide-out" class="button-collapse top-nav full hide-on-large-only"><i class="material-icons">menu</i></a>
+      </div>
+      <ul id="slide-out" class="side-nav fixed">
+        <li >
+          <a href="index.html" id="page-logo">
+            <img src="img/turtle.jpg" alt="Home page" width=300px height=300px>
+          </a>
+        </li>
+        <li><a href="#">Introduction</a></li>
+        <li><a href="rostopics.html">Rostopics</a></li>
+      </ul>
+
+    </header>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m9 110">
+            <div class="section scrollspy">
+              <p class="caption">
+                The Robot Operating System(ROS) is an open source framework for building robots.
+                It serves as a platform that permits developers to share tools and libraries.
+                Shown below is an introductory video from <a href="http://www.theconstructsim.com/">Robot Ignite Academy</a>.
+              </p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/EnSpiaD4S1g" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+          </div>
+          <!-- flash cards -->
+          <div class="col hide-on-small-only m3 12">
+            <p id="card-info">
+              Click on card to reveal further information
+            </p>
+
+            <!-- card 1 -->
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/card2.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">roscore<i class="material-icons right">more</i></span>
+                <p><a href="http://wiki.ros.org/roscore" target="_blank">docs</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">roscore<i class="material-icons right">close</i></span>
+                <p>A service that provides connection information to nodes so they can communicate with each other.</p>
+              </div>
+            </div>
+
+            <!-- card 2 -->
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/card3.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">rosrun<i class="material-icons right">more</i></span>
+                <p><a href="http://wiki.ros.org/rosbash#rosrun" target="_blank">docs</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">rosrun<i class="material-icons right">close</i></span>
+                <p>A commmand-line utility that lets you run an executable in an arbitrary package from anywhere
+                  without having to specify the full path.</p>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator" src="img/card4.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">rosnode<i class="material-icons right">more</i></span>
+                <p><a href="http://wiki.ros.org/rosnode" target="_blank">docs</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">rosnode<i class="material-icons right">close</i></span>
+                <p>A command line tool for displaying debugging information about ROS nodes.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- end of class row -->
+        </div>
+      </div>
+    </main>
+
+
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- custom javascript file -->
+    <script type="text/javascript" src="js/intro.js"></script>
+  </body>
+</html>
